@@ -1,7 +1,8 @@
 import React from 'react';
 import Pit from './Pit';
 import type { GameState, Player } from '@/types/game';
-import { PITS_PER_PLAYER, TOTAL_PITS, isPlayersPit } from '@/types/game';
+import { PITS_PER_PLAYER, TOTAL_PITS } from '@/types/game';
+import { isPlayersPit } from '@/lib/gameLogic';
 
 interface AjuaBoardProps {
   gameState: GameState;
