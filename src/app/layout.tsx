@@ -31,7 +31,7 @@ export default function RootLayout({
       <head>
         {/* Next/font handles font loading automatically */}
       </head>
-      <body className="font-body antialiased">
+      <body className="font-body antialiased" suppressHydrationWarning={true}>
         <FirebaseProvider>
           {children}
           <Toaster />
